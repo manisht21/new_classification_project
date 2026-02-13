@@ -120,7 +120,7 @@ Model saved in models/news_classifier.pkl
 ## 🎥 Explanation Video
 
 Video Explanation Link:
-(Add your Google Drive or YouTube link here)
+(https://drive.google.com/file/d/19ZhoDpII9-nS3SVNXPjl0VtHt1VHn5jW/view?usp=drivesdk)
 
 ---
 
