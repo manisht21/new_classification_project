@@ -90,7 +90,8 @@ Then open:
 http://localhost:8501
 
 Enter any news article and get predicted category.
-test case link for article predictions(https://drive.google.com/file/d/1wgQPuqSwVAa5hF7QE21Vx7Fn-5d1fa9v/view?usp=sharing)
+
+Test case link for article predictions(https://drive.google.com/file/d/1wgQPuqSwVAa5hF7QE21Vx7Fn-5d1fa9v/view?usp=sharing)
 
 ---
 
