@@ -1,15 +1,20 @@
 # 📰 News Article Classification using Machine Learning
 
 ## 📌 Project Overview
-This project implements a complete machine learning pipeline to classify news articles into predefined categories using Python scripts only. The pipeline includes data preprocessing, feature engineering, model training, and evaluation, and can be executed directly from the terminal.
+This project implements a complete Machine Learning pipeline to classify news articles into categories using the AG News dataset. The solution is built entirely using Python scripts (.py files) and can be executed from the terminal.
+
+The pipeline includes:
+- Data preprocessing
+- Feature engineering using TF-IDF
+- Model training using Logistic Regression
+- Model evaluation
+- Streamlit web deployment
 
 ---
 
 ## 📂 Dataset Source
-
 Dataset Used: AG News Dataset  
-Source: Public Kaggle Dataset  
-https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset  
+Source: https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset  
 
 The dataset contains news articles categorized into:
 - World
@@ -19,13 +24,20 @@ The dataset contains news articles categorized into:
 
 ---
 
-## 📁 Folder Structure
+## 🧠 Model Used
+- TF-IDF Vectorizer  
+- Logistic Regression Classifier  
+- Implemented using scikit-learn  
+- Final Accuracy: ~91%
 
+---
+
+## 📁 Folder Structure
 news_classification_project/
 │
 ├── data/
-│   ├── raw/              # Original dataset files (train.csv, test.csv)
-│   └── processed/        # Cleaned and processed dataset
+│   ├── raw/
+│   └── processed/
 │
 ├── src/
 │   ├── data_preprocessing.py
@@ -35,99 +47,82 @@ news_classification_project/
 │   └── config.py
 │
 ├── models/
-│   └── news_classifier.pkl   # Saved trained model
+│   └── news_classifier.pkl
 │
 ├── results/
-│   └── metrics.txt           # Evaluation results
+│   └── metrics.txt
 │
 ├── requirements.txt
 ├── README.md
-└── main.py
+├── main.py
+└── app.py
 
 ---
 
-## ⚙️ Steps to Run the Project
+## ▶️ How to Run the Project
 
-1️⃣ Clone the Repository
-
-git clone https://github.com/manisht21/new_classification_project.git
-cd new_classification_project
-
-2️⃣ Create Virtual Environment (Optional but Recommended)
-
+### 1️⃣ Create Virtual Environment
 python -m venv venv
+
+Activate (Windows):
 venv\Scripts\activate
 
-3️⃣ Install Dependencies
-
+### 2️⃣ Install Requirements
 pip install -r requirements.txt
 
-4️⃣ Run the Full Pipeline
-
+### 3️⃣ Run Full ML Pipeline
 python main.py
 
-Running main.py will:
+This will:
 - Preprocess data
-- Train the model
-- Evaluate the model
-- Save results
+- Train model
+- Save model in models/
+- Evaluate model
+- Save metrics in results/
 - Print final accuracy
 
 ---
 
-## 🧠 Machine Learning Model Used
+## 🌐 Run Streamlit Web App
+streamlit run app.py
 
-Feature Extraction: TF-IDF Vectorization  
-Model: Logistic Regression  
-Library: Scikit-learn  
+Then open:
+http://localhost:8501
 
-Logistic Regression was chosen because:
-- It performs well for text classification
-- It is efficient and fast
-- Works effectively with TF-IDF features
+Enter any news article and get predicted category.
 
 ---
 
 ## 📊 Final Results
-
-Accuracy: ~91.6%  
-Confusion Matrix saved in results/metrics.txt  
-Model saved in models/news_classifier.pkl  
-
----
-
-## 🏗️ Machine Learning Workflow
-
-1. Data Preprocessing
-   - Lowercasing
-   - Removing special characters
-   - Handling missing values
-
-2. Feature Engineering
-   - Convert text into numerical vectors using TF-IDF
-
-3. Model Training
-   - Train Logistic Regression model
-   - Save model using joblib
-
-4. Model Evaluation
-   - Accuracy calculation
-   - Confusion matrix generation
-   - Save results to file
+- Model: Logistic Regression
+- Feature Extraction: TF-IDF
+- Accuracy: ~91%
+- Fully working ML pipeline
+- Streamlit deployment ready
 
 ---
 
-## 🎥 Explanation Video
-
-Video Explanation Link:
-(https://drive.google.com/file/d/19ZhoDpII9-nS3SVNXPjl0VtHt1VHn5jW/view?usp=drivesdk)
+## 🎥 Video Explanation
+(https://drive.google.com/drive/folders/1RkBqrY3ehA2B2RYg5XqSr7LwPpBA1lIy?usp=sharing)
 
 ---
 
-## 📌 Key Learnings
+## 🔗 GitHub Repository
+https://github.com/manisht21/new_classification_project
 
-- Building end-to-end ML pipeline using only Python scripts.
-- Text preprocessing and feature extraction.
-- Model saving and loading.
-- Proper project architecture for production-ready ML systems.
-- Running ML workflow from terminal without Jupyter Notebook.
+---
+
+## 🚀 Key Learnings
+- End-to-end ML workflow
+- Text preprocessing
+- TF-IDF feature engineering
+- Model training & evaluation
+- Saving pipeline with joblib
+- Streamlit deployment
+- Clean project architecture using .py files only
+✔ Deployment added  
+
+---
+
+## 👨‍💻 Developed By
+Manish Tiwari
