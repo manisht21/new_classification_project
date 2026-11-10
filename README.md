@@ -109,11 +109,6 @@ Test case link for article predictions(https://drive.google.com/file/d/1wgQPuqSw
 
 ---
 
-## 🔗 GitHub Repository
-https://github.com/manisht21/new_classification_project
-
----
-
 ## 🚀 Key Learnings
 - End-to-end ML workflow
 - Text preprocessing
